@@ -56,7 +56,7 @@ include "conn.php";
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="index.php" class="nav-link active text-dashboard-item">
+                <a href="index.php" class="nav-link active text-dashboard-item bg-success">
                     Dashboard
                 </a>
                 <a href="index.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">

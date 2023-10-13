@@ -18,13 +18,13 @@ if (isset($_SESSION["login"])) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="public/css/login.css">
+  <link rel="stylesheet" href="public/css/login1.css">
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="shortcut icon" href="public/image/untan.png" />
 </head>
 
 <body>
-  <div class="d-flex border-dark bg-primary shadow-sm z-3 position-relative">
+  <div class="d-flex border-dark bg-success shadow-sm z-3 position-relative">
       <div class="p-2 ms-5 flex-grow-1">
         <a href="index.php">
           <button class="btn btn-outline-dark text-center" type="submit">
@@ -89,7 +89,7 @@ if (isset($_SESSION["login"])) {
           </div>
         </form>
         <div class="footer">
-            <div class="d-flex border-dark bg-secondary shadow-sm">
+            <div class="d-flex border-dark bg-success shadow-sm">
                 <div class="p-2 ms-5 flex-grow-1">
                     <img src="public/image/untan.png" width="30px" class="mx-1 me-md-2">
                     <span>

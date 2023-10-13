@@ -27,7 +27,7 @@ include "conn.php";
 </head>
 
 <body>
-    <div class="d-flex border-dark bg-primary fixed-top">
+    <div class="d-flex border-dark bg-success fixed-top">
         <div class="p-2 ms-5 flex-grow-1">
             <button class="btn btn-outline-dark text-center active">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-check" viewBox="0 0 16 16">
@@ -51,7 +51,7 @@ include "conn.php";
     </div>
     
     <div class="footer">
-        <div class="d-flex border-dark bg-secondary shadow-sm">
+        <div class="d-flex border-dark bg-success shadow-sm">
             <div class="p-2 ms-5 flex-grow-1">
                 <img src="public/image/untan.png" width="30px" class="mx-1 me-md-2">
                 <span>
