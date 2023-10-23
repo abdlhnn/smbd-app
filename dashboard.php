@@ -63,6 +63,22 @@ include "conn.php";
                     <i class="bi bi-speedometer fs-5"></i>
                 </a>
             </li>
+            <li>
+                <a href="all-grafik.php" class="nav-link link-body-emphasis text-dashboard-item">
+                    Semua Grafik
+                </a>
+                <a href="all-grafik.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
+                    <i class="bi bi-graph-up fs-5"></i>
+                </a>
+            </li>
+            <li>
+                <a href="data-tables.php" class="nav-link link-body-emphasis text-dashboard-item">
+                    Data Grafik
+                </a>
+                <a href="data-tables.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
+                    <i class="bi bi-table fs-5"></i>
+                </a>
+            </li>
             
         </ul>
         <hr>

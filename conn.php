@@ -15,7 +15,7 @@ class Connection
     private $hostname = "localhost";        
     private $username = "root";
     private $password = "";
-    private $dbname = "metopen-app";
+    private $dbname = "smbd-app";
 
     public function connect()
     {
