@@ -115,7 +115,7 @@ class DataView extends DataController
                     <td><?php echo $data['created_at'] ?></td>
                     <td>
                         <?php echo
-                        "<a class='text-decoration-none' href='rincian-air-layak-diminum.php?warna-buah=" . $data['warna_buah_warna'] . "'>
+                        "<a class='text-decoration-none' href='rincian-buah-layak-dimakan.php?warna-buah=" . $data['warna_buah_warna'] . "'>
                             <button class='btn btn-sm btn-info'>
                                 <i class='bi bi-eye-fill me-2'></i></i>Rincian
                             </button>
@@ -148,7 +148,7 @@ class DataView extends DataController
                     <td><?php echo $keterangan ?></td>
                     <td><?php echo $data['created_at'] ?></td>
                     <td> <?php echo
-                            "<a class='text-decoration-none' href='rincian-air-tidak-layak-diminum.php?warna-buah=" . $data['warna_buah_warna'] . "'>
+                            "<a class='text-decoration-none' href='rincian-buah-tidak-layak-dimakan.php?warna-buah=" . $data['warna_buah_warna'] . "'>
                                 <button class='btn btn-sm btn-info'>
                                     <i class='bi bi-eye-fill me-2'></i></i>Rincian
                                 </button>

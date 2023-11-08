@@ -8,7 +8,10 @@ if (!isset($_SESSION["login"])) {
     exit();
 }
 include "conn.php";
-
+include "./Model/data.model.php";
+include "./Controller/data.controller.php";
+include "./View/data.view.php";
+$datas = new DataView();
 ?>
 
 <!DOCTYPE html>
@@ -120,7 +123,48 @@ include "conn.php";
                         </div>
                     </div>
                 </div>
-                
+                <div class="row m-4 mt-0">
+                    <div class="col-md-12">
+                        <div class="row mb-1">
+                            <div class="col-md-6">
+                                <div class="card hoverable card-xl-stretch mb-5 mb-xl-8 rounded-1">
+                                    <div class="shadow">
+                                        <a class="text-decoration-none card" href="buah-layak-makan.php">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-moisture text-white" viewBox="0 0 512 512">
+                                                    <path d="M160 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                                    <div class="text-white fw-bolder fs-1 mb-2 mt-5 text-end">
+                                                        <?php $datas->jumlahBuahLayakMakan() ?>
+                                                    </div>
+                                                </div>
+                                                <div class="fw-bold text-white text-end fs-6">Jumlah Data Layak Dimakan</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card card2 hoverable card-xl-stretch mb-5 mb-xl-8 rounded-1">
+                                    <div class="shadow">
+                                        <a class="text-decoration-none card2" href="buah-tidak-layak-dimakan.php">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-moisture text-white" viewBox="0 0 512 512">
+                                                    <path d="M160 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                                    <div class="text-white fw-bolder fs-1 mb-2 mt-5 text-end">
+                                                        <?php $datas->jumlahBuahTidakLayakMakan() ?>
+                                                    </div>
+                                                </div>
+                                                <div class="fw-bolder text-end fs-6 text-white">Jumlah Data Tidak Layak Dimakan</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

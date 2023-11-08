@@ -32,7 +32,7 @@ class DataModel extends Connection
 
     protected function findAllIndex()
     {
-        $sql = "SELECT data.*, warna_buah.warna AS warna_buah_warna,  FROM data JOIN warna_buah ON data.warna_buah_id = warna_buah.id  JOIN (SELECT warna_buah_id, MAX(created_at) AS max_created_at FROM data GROUP BY warna_buah_id ) AS max_created ON data.warna_buah_id = max_created.warna_buah_id AND data.created_at = max_created.max_created_at";
+        $sql = "SELECT data.*, warna_buah.warna AS warna_buah_warna  FROM data JOIN warna_buah ON data.warna_buah_id = warna_buah.id  JOIN (SELECT warna_buah_id, MAX(created_at) AS max_created_at FROM data GROUP BY warna_buah_id ) AS max_created ON data.warna_buah_id = max_created.warna_buah_id AND data.created_at = max_created.max_created_at";
         $result = $this->connect()->query($sql);
         if ($result->num_rows > 0) {
             while ($data = mysqli_fetch_assoc($result)) {
@@ -44,7 +44,7 @@ class DataModel extends Connection
 
     protected function buahLayakMakan()
     {
-        $sql = "SELECT data.*, warna_buah.warna AS warna_buah_warna,  FROM data JOIN warna_buah ON data.warna_buah_id = warna_buah.id JOIN (SELECT warna_buah_id, MAX(created_at) AS max_created_at FROM data WHERE kelayakan = true GROUP BY warna_buah_id ) AS max_created ON data.warna_buah_id = max_created.warna_buah_id AND data.created_at = max_created.max_created_at";
+        $sql = "SELECT data.*, warna_buah.warna AS warna_buah_warna  FROM data JOIN warna_buah ON data.warna_buah_id = warna_buah.id JOIN (SELECT warna_buah_id, MAX(created_at) AS max_created_at FROM data WHERE kelayakan = true GROUP BY warna_buah_id ) AS max_created ON data.warna_buah_id = max_created.warna_buah_id AND data.created_at = max_created.max_created_at";
         $result = $this->connect()->query($sql);
         if ($result->num_rows > 0) {
             while ($data = mysqli_fetch_assoc($result)) {
@@ -55,7 +55,7 @@ class DataModel extends Connection
     }
     protected function buahTidakLayakMakan()
     {
-        $sql = "SELECT data.*, warna_buah.warna AS warna_buah_warna, FROM data JOIN warna_buah ON data.warna_buah_id = warna_buah.id JOIN  (SELECT warna_buah_id, MAX(created_at) AS max_created_at FROM data WHERE kelayakan = false GROUP BY warna_buah_id ) AS max_created ON data.warna_buah_id = max_created.warna_buah_id AND data.created_at = max_created.max_created_at";
+        $sql = "SELECT data.*, warna_buah.warna AS warna_buah_warna FROM data JOIN warna_buah ON data.warna_buah_id = warna_buah.id JOIN  (SELECT warna_buah_id, MAX(created_at) AS max_created_at FROM data WHERE kelayakan = false GROUP BY warna_buah_id ) AS max_created ON data.warna_buah_id = max_created.warna_buah_id AND data.created_at = max_created.max_created_at";
         $result = $this->connect()->query($sql);
         if ($result->num_rows > 0) {
             while ($data = mysqli_fetch_assoc($result)) {
