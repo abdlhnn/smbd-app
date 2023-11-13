@@ -28,23 +28,23 @@ $datas = new DataView();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        .card {
-            border-radius: 5px;
-            background-color: indigo;
-        }
+    .card {
+        border-radius: 5px;
+        background-color: indigo;
+    }
 
-        .card:hover {
-            background-color: blue;
-        }
+    .card:hover {
+        background-color: blue;
+    }
 
-        .card2 {
-            border-radius: 5px;
-            background-color: green;
-        }
+    .card2 {
+        border-radius: 5px;
+        background-color: green;
+    }
 
-        .card2:hover {
-            background-color: blue;
-        }
+    .card2:hover {
+        background-color: blue;
+    }
     </style>
 </head>
 
@@ -59,10 +59,11 @@ $datas = new DataView();
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="index.php" class="nav-link active text-dashboard-item bg-success">
+                <a href="index.php" class="nav-link active text-dashboard-item bg-primary">
                     Dashboard
                 </a>
-                <a href="index.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
+                <a href="index.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
                     <i class="bi bi-speedometer fs-5"></i>
                 </a>
             </li>
@@ -70,7 +71,9 @@ $datas = new DataView();
                 <a href="all-grafik.php" class="nav-link link-body-emphasis text-dashboard-item">
                     Semua Grafik
                 </a>
-                <a href="all-grafik.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
+                <a href="all-grafik.php"
+                    class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
                     <i class="bi bi-graph-up fs-5"></i>
                 </a>
             </li>
@@ -78,15 +81,18 @@ $datas = new DataView();
                 <a href="data-tables.php" class="nav-link link-body-emphasis text-dashboard-item">
                     Data Grafik
                 </a>
-                <a href="data-tables.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
+                <a href="data-tables.php"
+                    class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
                     <i class="bi bi-table fs-5"></i>
                 </a>
             </li>
-            
+
         </ul>
         <hr>
         <div class="dropdown">
-            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle fs-3 me-2"></i>
                 <strong class="text-dashboard-item"><?= $_SESSION['admin-name'] ?></strong>
             </a>
@@ -117,8 +123,12 @@ $datas = new DataView();
                     <div class="col-md-12">
                         <div class="card bg-warning rounded-0 mb-4 rounded-3">
                             <div class="card-body pt-0 mt-3">
-                                <h5 class="card-title">Selamat Datang, <span class="text text-black fw-boldest"><?= $_SESSION['admin-name'] ?></span></h5>
-                                <p class="card-text fw-bold">Di Sistem Informasi Monitoring gas etilen pisang.</p>
+                                <h5 class="card-title">Selamat Datang, <span
+                                        class="text text-black fw-boldest"><?= $_SESSION['admin-name'] ?></span></h5>
+                                <p class="card-text fw-bold">Selamat Datang di Website Monitoring Kadar Gas Dan Suhu
+                                    Pada Buah Pisang Kepok Menggunakan Sensor MQ-3 Dan
+                                    Sensor DHT-11.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -130,15 +140,20 @@ $datas = new DataView();
                                 <div class="card hoverable card-xl-stretch mb-5 mb-xl-8 rounded-1">
                                     <div class="shadow">
                                         <a class="text-decoration-none card" href="buah-layak-makan.php">
-                                            <div class="card-body">
+                                            <div class="card-body" style="background: #ffe135;">
                                                 <div class="d-flex justify-content-between">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-moisture text-white" viewBox="0 0 512 512">
-                                                    <path d="M160 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                        fill="currentColor" class="bi bi-moisture text-white"
+                                                        viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M160 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                                    </svg>
                                                     <div class="text-white fw-bolder fs-1 mb-2 mt-5 text-end">
                                                         <?php $datas->jumlahBuahLayakMakan() ?>
                                                     </div>
                                                 </div>
-                                                <div class="fw-bold text-white text-end fs-6">Jumlah Data Layak Dimakan</div>
+                                                <div class="fw-bold text-white text-end fs-6">Jumlah Data Layak Dimakan
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
@@ -148,15 +163,20 @@ $datas = new DataView();
                                 <div class="card card2 hoverable card-xl-stretch mb-5 mb-xl-8 rounded-1">
                                     <div class="shadow">
                                         <a class="text-decoration-none card2" href="buah-tidak-layak-dimakan.php">
-                                            <div class="card-body">
+                                            <div class=" card-body" style="background: #B05E27;">
                                                 <div class="d-flex justify-content-between">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-moisture text-white" viewBox="0 0 512 512">
-                                                    <path d="M160 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                        fill="currentColor" class="bi bi-moisture text-white"
+                                                        viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M160 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                                    </svg>
                                                     <div class="text-white fw-bolder fs-1 mb-2 mt-5 text-end">
                                                         <?php $datas->jumlahBuahTidakLayakMakan() ?>
                                                     </div>
                                                 </div>
-                                                <div class="fw-bolder text-end fs-6 text-white">Jumlah Data Tidak Layak Dimakan</div>
+                                                <div class="fw-bolder text-end fs-6 text-white">Jumlah Data Tidak Layak
+                                                    Dimakan</div>
                                             </div>
                                         </a>
                                     </div>
@@ -171,6 +191,12 @@ $datas = new DataView();
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script src="public/js/sidebars.js"></script>
+    <script>
+    $(function() {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
 </body>
 
 </html>
