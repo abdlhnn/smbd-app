@@ -42,6 +42,12 @@ class DataView extends DataController
                 <i class="bi bi-trash me-2"></i>Hapus
             </button>
         </a>
+        <a class="text-decoration-none" href="tambah.php">
+            <button class="btn btn-sm btn-success">
+                <i class="bi bi-file-plus me-2"></i>Tambah
+            </button>
+        </a>
+
     </td>
 </tr>
 <?php
