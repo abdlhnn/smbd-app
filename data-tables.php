@@ -72,7 +72,6 @@ $datas = new DataView();
                 </a>
             </li>
 
-
         </ul>
         <hr>
         <div class="dropdown">
@@ -112,6 +111,13 @@ $datas = new DataView();
                             <span class="fs-5 text-white fw-bold">
                                 Tabel Semua Data buah
                             </span>
+                        </div>
+                        <div>
+                            <a class="text-decoration-none" href="tambah.php">
+                                <button class="btn btn-sm btn-success m-3">
+                                    <i class="bi bi-file-plus me-2"></i>Tambah Data
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div class="container p-3">
