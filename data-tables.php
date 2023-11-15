@@ -47,7 +47,8 @@ $datas = new DataView();
                 <a href="index.php" class="nav-link link-body-emphasis text-dashboard-item">
                     Dashboard
                 </a>
-                <a href="index.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
+                <a href="index.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
                     <i class="bi bi-speedometer fs-5"></i>
                 </a>
             </li>
@@ -55,7 +56,9 @@ $datas = new DataView();
                 <a href="all-grafik.php" class="nav-link link-body-emphasis text-dashboard-item">
                     Semua Grafik
                 </a>
-                <a href="all-grafik.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
+                <a href="all-grafik.php"
+                    class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
                     <i class="bi bi-graph-up fs-5"></i>
                 </a>
             </li>
@@ -63,16 +66,18 @@ $datas = new DataView();
                 <a href="data-tables.php" class="nav-link active text-dashboard-item">
                     Data Grafik
                 </a>
-                <a href="data-tables.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
+                <a href="data-tables.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
                     <i class="bi bi-table fs-5"></i>
                 </a>
             </li>
-            
-            
+
+
         </ul>
         <hr>
         <div class="dropdown">
-            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle fs-3 me-2"></i>
 
                 <strong class="text-dashboard-item"><?= $_SESSION['admin-name'] ?></strong>
@@ -95,7 +100,8 @@ $datas = new DataView();
             <div class="row">
                 <div class="col-md-12 pt-3 pb-3 border-bottom bg index">
                     <a href="" class="d-flex align-items-center me-md-auto text-dark text-decoration-none">
-                        <span class="fs-6 text-muted me-2">Dashboard </span><span class="fs-4 text-muted"> - </span><span class="ms-2 fs-6 fw-bold"> Data Grafik</span>
+                        <span class="fs-6 text-muted me-2">Dashboard </span><span class="fs-4 text-muted"> -
+                        </span><span class="ms-2 fs-6 fw-bold"> Data Grafik</span>
                     </a>
                 </div>
             </div>
@@ -120,12 +126,12 @@ $datas = new DataView();
                                         <th class="align-middle text-center">Warna Buah</th>
                                         <th class="align-middle text-center">Keterangan</th>
                                         <th class="align-middle text-center">Grafik</th>
+                                        <th class="align-middle text-center">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php $datas->show() ?>
                                 </tbody>
-
                             </table>
                         </div>
                     </div>

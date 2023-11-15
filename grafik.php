@@ -24,8 +24,12 @@ require 'conn.php';
     <link rel="shortcut icon" href="public/image/untan.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js" integrity="sha512-wUYbRPLV5zs6IqvWd88HIqZU/b8TBx+I8LEioQ/UC0t5EMCLApqhIAnUg7EsAzdbhhdgW07TqYDdH3QEXRcPOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+        integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/2.0.1/chartjs-plugin-zoom.min.js"
+        integrity="sha512-wUYbRPLV5zs6IqvWd88HIqZU/b8TBx+I8LEioQ/UC0t5EMCLApqhIAnUg7EsAzdbhhdgW07TqYDdH3QEXRcPOQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -42,7 +46,8 @@ require 'conn.php';
                 <a href="index.php" class="nav-link link-body-emphasis text-dashboard-item">
                     Dashboard
                 </a>
-                <a href="index.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
+                <a href="index.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard">
                     <i class="bi bi-speedometer fs-5"></i>
                 </a>
             </li>
@@ -50,7 +55,9 @@ require 'conn.php';
                 <a href="all-grafik.php" class="nav-link link-body-emphasis text-dashboard-item">
                     Semua Grafik
                 </a>
-                <a href="all-grafik.php" class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
+                <a href="all-grafik.php"
+                    class="nav-link link-body-emphasis icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Semua Grafik">
                     <i class="bi bi-graph-up fs-5"></i>
                 </a>
             </li>
@@ -58,16 +65,18 @@ require 'conn.php';
                 <a href="data-tables.php" class="nav-link active text-dashboard-item">
                     Data Grafik
                 </a>
-                <a href="data-tables.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
+                <a href="data-tables.php" class="nav-link active icon-dashboard-item p-0 m-0 py-1 text-center"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Data Grafik">
                     <i class="bi bi-table fs-5"></i>
                 </a>
             </li>
-            
-            
+
+
         </ul>
         <hr>
         <div class="dropdown">
-            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
 
                 <i class="bi bi-person-circle fs-3 me-2"></i>
 
@@ -162,8 +171,8 @@ require 'conn.php';
                 </div>
             </div>
             <div class="row justify-content-around">
-               
-                
+
+
                 <div class="col-md-6">
                     <div class="container pt-4">
                         <section class="mb-4">
@@ -186,11 +195,13 @@ require 'conn.php';
                         <section class="mb-4">
                             <div class="card">
                                 <div class="card-header py-3 bg-primary">
-                                    <h5 class="mb-0 text-center"><strong class="text-white">Grafik Suhu Lingkungan</strong></h5>
+                                    <h5 class="mb-0 text-center"><strong class="text-white">Grafik Suhu
+                                            Lingkungan</strong></h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="text-end">
-                                        <button class="btn btn-secondary btn-sm" onclick="resetSuhuLingkungan()">Reset</button>
+                                        <button class="btn btn-secondary btn-sm"
+                                            onclick="resetSuhuLingkungan()">Reset</button>
                                     </div>
                                     <canvas class="my-4 w-100" id="chartSuhuLingkungan" height="380"></canvas>
                                 </div>
@@ -198,50 +209,50 @@ require 'conn.php';
                         </section>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
     <script>
-        // let options = {
-        //     scales: {
-        //         x: {
-        //             // type: 'time',
-        //             // time: {
-        //             //     displayFormats: {
-        //             //         quarter: 'MMM YYYY'
-        //             //     }
-        //             // }
-        //         },
-        //         y: {
-        //             // beginAtZero: true,
-        //         },
-        //     },
-        //     plugins: {
-        //         zoom: {
-        //             pan: {
-        //                 enabled: true,
-        //                 mode: 'xy'
-        //             },
-        //             zoom: {
-        //                 wheel: {
-        //                     enabled: true,
-        //                 },
-        //                 mode: 'xy',
-        //             }
-        //         }
-        //     }
-        // };
+    // let options = {
+    //     scales: {
+    //         x: {
+    //             // type: 'time',
+    //             // time: {
+    //             //     displayFormats: {
+    //             //         quarter: 'MMM YYYY'
+    //             //     }
+    //             // }
+    //         },
+    //         y: {
+    //             // beginAtZero: true,
+    //         },
+    //     },
+    //     plugins: {
+    //         zoom: {
+    //             pan: {
+    //                 enabled: true,
+    //                 mode: 'xy'
+    //             },
+    //             zoom: {
+    //                 wheel: {
+    //                     enabled: true,
+    //                 },
+    //                 mode: 'xy',
+    //             }
+    //         }
+    //     }
+    // };
 
-        //
+    //
 
-        let dataGas = <?= json_encode($dataGas) ?>;
-        let ctxGas = document.getElementById("chartGas").getContext("2d");
-        let chartGas = new Chart(ctxGas, {
-            type: 'line',
-            data: dataGas,
-            options: options = {
+    let dataGas = <?= json_encode($dataGas) ?>;
+    let ctxGas = document.getElementById("chartGas").getContext("2d");
+    let chartGas = new Chart(ctxGas, {
+        type: 'line',
+        data: dataGas,
+        options: options = {
             scales: {
                 x: {
                     // type: 'time',
@@ -269,17 +280,19 @@ require 'conn.php';
                     }
                 }
             }
-        }});
-        function resetGas(){
-            chartGas.resetZoom();
         }
+    });
 
-        let dataSuhuLingkungan = <?= json_encode($dataSuhuLingkungan) ?>;
-        let ctxSuhuLingkungan = document.getElementById("chartSuhuLingkungan").getContext("2d");
-        let chartSuhuLingkungan = new Chart(ctxSuhuLingkungan, {
-            type: 'line',
-            data: dataSuhuLingkungan,
-            options: options = {
+    function resetGas() {
+        chartGas.resetZoom();
+    }
+
+    let dataSuhuLingkungan = <?= json_encode($dataSuhuLingkungan) ?>;
+    let ctxSuhuLingkungan = document.getElementById("chartSuhuLingkungan").getContext("2d");
+    let chartSuhuLingkungan = new Chart(ctxSuhuLingkungan, {
+        type: 'line',
+        data: dataSuhuLingkungan,
+        options: options = {
             scales: {
                 x: {
                     // type: 'time',
@@ -307,12 +320,14 @@ require 'conn.php';
                     }
                 }
             }
-        }});
-        function resetSuhuLingkungan(){
-            chartSuhuLingkungan.resetZoom();
         }
+    });
 
-        // 
+    function resetSuhuLingkungan() {
+        chartSuhuLingkungan.resetZoom();
+    }
+
+    // 
     </script>
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
